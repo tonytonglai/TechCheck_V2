@@ -13,6 +13,15 @@
 		58056BA72936A83D007E667C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58056BA52936A83D007E667C /* Main.storyboard */; };
 		58056BA92936A83F007E667C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58056BA82936A83F007E667C /* Assets.xcassets */; };
 		58056BAC2936A83F007E667C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58056BAA2936A83F007E667C /* LaunchScreen.storyboard */; };
+		58056BB32936A99A007E667C /* arViewScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056BB22936A99A007E667C /* arViewScanner.swift */; };
+		58056BB52936ADA4007E667C /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056BB42936ADA4007E667C /* startViewController.swift */; };
+		58056BB72936AF2B007E667C /* roomSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056BB62936AF2B007E667C /* roomSelectionViewController.swift */; };
+		58056BBC29394191007E667C /* UserProblem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58056BBA29394191007E667C /* UserProblem.xcdatamodeld */; };
+		58056BBE29394208007E667C /* Selections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056BBD29394208007E667C /* Selections.swift */; };
+		5822BD66293AA7DB00A449EA /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822BD65293AA7DB00A449EA /* DefaultKeys.swift */; };
+		589FCBCA293C0CF100901D2D /* ObjectScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FCBC9293C0CF100901D2D /* ObjectScannerViewController.swift */; };
+		589FCBCC293C4DA100901D2D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FCBCB293C4DA100901D2D /* CardView.swift */; };
+		589FCBCE293C51CE00901D2D /* Meliora.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 589FCBCD293C51CE00901D2D /* Meliora.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +32,15 @@
 		58056BA62936A83D007E667C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58056BA82936A83F007E667C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58056BAB2936A83F007E667C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58056BB22936A99A007E667C /* arViewScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arViewScanner.swift; sourceTree = "<group>"; };
+		58056BB42936ADA4007E667C /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
+		58056BB62936AF2B007E667C /* roomSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomSelectionViewController.swift; sourceTree = "<group>"; };
+		58056BBB29394191007E667C /* UserProblem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserProblem.xcdatamodel; sourceTree = "<group>"; };
+		58056BBD29394208007E667C /* Selections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selections.swift; sourceTree = "<group>"; };
+		5822BD65293AA7DB00A449EA /* DefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
+		589FCBC9293C0CF100901D2D /* ObjectScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScannerViewController.swift; sourceTree = "<group>"; };
+		589FCBCB293C4DA100901D2D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		589FCBCD293C51CE00901D2D /* Meliora.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Meliora.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +73,21 @@
 		58056B9E2936A83D007E667C /* CSC216-TechCheck-App */ = {
 			isa = PBXGroup;
 			children = (
+				589FCBCD293C51CE00901D2D /* Meliora.rcproject */,
 				58056B9F2936A83D007E667C /* AppDelegate.swift */,
 				58056BA12936A83D007E667C /* ViewController.swift */,
 				58056BA32936A83D007E667C /* Experience.rcproject */,
 				58056BA52936A83D007E667C /* Main.storyboard */,
+				58056BB62936AF2B007E667C /* roomSelectionViewController.swift */,
+				58056BB22936A99A007E667C /* arViewScanner.swift */,
 				58056BA82936A83F007E667C /* Assets.xcassets */,
 				58056BAA2936A83F007E667C /* LaunchScreen.storyboard */,
+				58056BB42936ADA4007E667C /* startViewController.swift */,
+				58056BBA29394191007E667C /* UserProblem.xcdatamodeld */,
+				5822BD65293AA7DB00A449EA /* DefaultKeys.swift */,
+				58056BBD29394208007E667C /* Selections.swift */,
+				589FCBC9293C0CF100901D2D /* ObjectScannerViewController.swift */,
+				589FCBCB293C4DA100901D2D /* CardView.swift */,
 			);
 			path = "CSC216-TechCheck-App";
 			sourceTree = "<group>";
@@ -136,8 +163,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589FCBCE293C51CE00901D2D /* Meliora.rcproject in Sources */,
 				58056BA22936A83D007E667C /* ViewController.swift in Sources */,
+				58056BB52936ADA4007E667C /* startViewController.swift in Sources */,
+				58056BB72936AF2B007E667C /* roomSelectionViewController.swift in Sources */,
 				58056BA02936A83D007E667C /* AppDelegate.swift in Sources */,
+				58056BBE29394208007E667C /* Selections.swift in Sources */,
+				5822BD66293AA7DB00A449EA /* DefaultKeys.swift in Sources */,
+				589FCBCA293C0CF100901D2D /* ObjectScannerViewController.swift in Sources */,
+				58056BB32936A99A007E667C /* arViewScanner.swift in Sources */,
+				58056BBC29394191007E667C /* UserProblem.xcdatamodeld in Sources */,
+				589FCBCC293C4DA100901D2D /* CardView.swift in Sources */,
 				58056BA42936A83D007E667C /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +396,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		58056BBA29394191007E667C /* UserProblem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				58056BBB29394191007E667C /* UserProblem.xcdatamodel */,
+			);
+			currentVersion = 58056BBB29394191007E667C /* UserProblem.xcdatamodel */;
+			path = UserProblem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 58056B942936A83D007E667C /* Project object */;
 }
