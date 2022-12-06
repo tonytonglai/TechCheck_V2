@@ -32,3 +32,13 @@ struct Building: Identifiable {
         }
     }
 }
+
+struct Problem: Identifiable {
+    
+    let problemList: [String]
+    let id = UUID()
+    
+    init () {
+        self.problemList = ["Computer", "Monitor"]
+    }
+}

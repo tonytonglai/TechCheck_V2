@@ -140,14 +140,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NI5-6Y-l4T">
-                                <rect key="frame" x="157" y="791" width="101" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="qCq-F2-mNh"/>
-                                </constraints>
+                                <rect key="frame" x="157" y="789" width="100.5" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Pick Issue"/>
                                 <connections>
                                     <action selector="onIdentifyPress:" destination="4LF-Ae-AdE" eventType="touchUpInside" id="eHs-13-FFi"/>
+                                    <action selector="onPickIssue:" destination="wTN-HH-BAg" eventType="touchUpInside" id="HG4-uc-iZm"/>
                                     <action selector="scanIssueButton:" destination="cSM-uv-QHK" eventType="touchUpInside" id="tWE-AL-JKJ"/>
                                     <segue destination="jPm-Bb-Qoh" kind="show" id="9re-lu-2Of"/>
                                 </connections>
@@ -173,16 +171,15 @@
                         <constraints>
                             <constraint firstItem="Kxg-CV-GiM" firstAttribute="centerY" secondItem="sRO-P8-3mM" secondAttribute="centerY" id="2af-2Y-SOK"/>
                             <constraint firstItem="m4t-Yt-LhV" firstAttribute="centerY" secondItem="sRO-P8-3mM" secondAttribute="centerY" multiplier="0.3" id="4hI-eM-0XF"/>
-                            <constraint firstItem="NI5-6Y-l4T" firstAttribute="centerX" secondItem="Kxg-CV-GiM" secondAttribute="centerX" id="6Qh-CQ-w8j"/>
                             <constraint firstItem="Kxg-CV-GiM" firstAttribute="top" secondItem="m4t-Yt-LhV" secondAttribute="bottom" constant="97" id="96R-7r-fWj"/>
                             <constraint firstItem="m4t-Yt-LhV" firstAttribute="centerX" secondItem="sRO-P8-3mM" secondAttribute="centerX" id="DNz-tv-Uw6"/>
+                            <constraint firstItem="NI5-6Y-l4T" firstAttribute="centerY" secondItem="sRO-P8-3mM" secondAttribute="centerY" multiplier="1.8" id="F5I-Ll-wxk"/>
                             <constraint firstItem="Kxg-CV-GiM" firstAttribute="centerX" secondItem="sRO-P8-3mM" secondAttribute="centerX" id="NES-rR-JXX"/>
                             <constraint firstItem="Kxg-CV-GiM" firstAttribute="centerY" secondItem="sRO-P8-3mM" secondAttribute="centerY" id="h4f-iw-n6L"/>
                             <constraint firstItem="Kxg-CV-GiM" firstAttribute="top" secondItem="sRO-P8-3mM" secondAttribute="top" constant="248" id="iGs-MH-50b"/>
                             <constraint firstItem="Kxg-CV-GiM" firstAttribute="centerX" secondItem="m4t-Yt-LhV" secondAttribute="centerX" id="ioT-T9-NIY"/>
-                            <constraint firstItem="9yn-Wp-tZW" firstAttribute="bottom" secondItem="NI5-6Y-l4T" secondAttribute="bottom" constant="36" id="lBJ-3G-M0g"/>
+                            <constraint firstItem="NI5-6Y-l4T" firstAttribute="centerX" secondItem="sRO-P8-3mM" secondAttribute="centerX" id="l0Y-0x-pqn"/>
                             <constraint firstItem="Kxg-CV-GiM" firstAttribute="leading" secondItem="9yn-Wp-tZW" secondAttribute="leading" constant="57" id="n1V-q8-JwM"/>
-                            <constraint firstItem="NI5-6Y-l4T" firstAttribute="leading" secondItem="9yn-Wp-tZW" secondAttribute="leading" constant="157" id="xVH-5g-soj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2sl-GH-8H3"/>
@@ -195,10 +192,10 @@
             </objects>
             <point key="canvasLocation" x="2078" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Problem Selection View Controller-->
         <scene sceneID="TF9-rd-GWD">
             <objects>
-                <viewController id="jPm-Bb-Qoh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="problemSelection" id="jPm-Bb-Qoh" customClass="ProblemSelectionViewController" customModule="CSC216_TechCheck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hAX-tt-uQQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,17 +211,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAq-6y-ua3">
-                                <rect key="frame" x="82" y="782" width="250" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAq-6y-ua3">
+                                <rect key="frame" x="98" y="789" width="218" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Let's start TechChecking!"/>
+                                <connections>
+                                    <action selector="onTechCheck:" destination="jPm-Bb-Qoh" eventType="touchUpInside" id="Ako-nq-Z4C"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pw4-32-7oI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tAq-6y-ua3" firstAttribute="centerY" secondItem="hAX-tt-uQQ" secondAttribute="centerY" multiplier="1.8" id="NGq-n0-cbb"/>
+                            <constraint firstItem="tAq-6y-ua3" firstAttribute="centerX" secondItem="hAX-tt-uQQ" secondAttribute="centerX" id="m3r-XH-DBW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="y5V-3f-gHu"/>
+                    <connections>
+                        <outlet property="problemPickerView" destination="B0y-k6-WMZ" id="5ne-kV-3gF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ejo-ek-aJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

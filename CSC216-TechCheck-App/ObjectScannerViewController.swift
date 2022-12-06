@@ -15,6 +15,15 @@ class ObjectScannerViewController: UIViewController {
     @IBOutlet weak var arView: ARView!
     @IBOutlet weak var scannerBackgroundBorder: CardView!
     var overallRoom: String = ""
+    var finalObject: String = ""
+    
+    @IBAction func onPickIssue(_ sender: Any) {
+        let myVC = storyboard?.instantiateViewController(withIdentifier: "problemSelection") as! ProblemSelectionViewController
+        myVC.overallRoom = self.overallRoom
+        myVC.objectScanned = self.finalObject
+    }
+    
+    // TODO: stretch goal, conditionally render the "pick issue" button. Only allow for it to be clickable/different oolor when an object is detected
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,23 +37,35 @@ class ObjectScannerViewController: UIViewController {
 //        scannerBackgroundBorder.layer.shouldRasterize = true
         
         let Meliora = try! Meliora.loadSchoolText()
+        let LowBattery = try! LowBattery.loadBatteryIcon()
+        
         let session = arView.session
         
-        var ai: UUID? = Meliora.anchorIdentifier
+        var mel: UUID? = Meliora.anchorIdentifier
+        var low = LowBattery.anchorIdentifier
         
         arView.scene.anchors.append(Meliora)
         
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-            print("Timer fired!")
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [self] timer in
+            print("Timer fired! Also overall room is \(overallRoom)")
 
-            ai = Meliora.anchorIdentifier
+            mel = Meliora.anchorIdentifier
+            low = LowBattery.anchorIdentifier
             
-            if (ai != nil) {
-                print("HUZZAH")
+            if (mel != nil) {
+                print("mel is here")
+                self.finalObject = "schoolLogo"
+                print("finalObject is \(finalObject)")
+                // seems like the UUID is useless. just use the conditionals to check here.
                 timer.invalidate()
             }
 
-            print(ai)
+            if (low != nil) {
+                print("low battery it is!")
+                self.finalObject = "batteryIcon"
+                print("finalObject is \(finalObject)")
+                timer.invalidate()
+            }
         }
         // Do any additional setup after loading the view.
     }
