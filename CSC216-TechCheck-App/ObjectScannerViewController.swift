@@ -21,13 +21,13 @@ class ObjectScannerViewController: UIViewController {
         let myVC = storyboard?.instantiateViewController(withIdentifier: "problemSelection") as! ProblemSelectionViewController
         myVC.overallRoom = self.overallRoom
         myVC.objectScanned = self.finalObject
+        navigationController?.pushViewController(myVC, animated: true)
     }
     
     // TODO: stretch goal, conditionally render the "pick issue" button. Only allow for it to be clickable/different oolor when an object is detected
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(overallRoom)
         scannerBackgroundBorder.layer.cornerRadius = 10
         scannerBackgroundBorder.layer.shadowOpacity = 0.3
         scannerBackgroundBorder.layer.shadowColor = UIColor.black.cgColor
@@ -47,23 +47,19 @@ class ObjectScannerViewController: UIViewController {
         arView.scene.anchors.append(Meliora)
         
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [self] timer in
-            print("Timer fired! Also overall room is \(overallRoom)")
+            print("Timer fired!")
 
             mel = Meliora.anchorIdentifier
             low = LowBattery.anchorIdentifier
             
             if (mel != nil) {
-                print("mel is here")
                 self.finalObject = "schoolLogo"
-                print("finalObject is \(finalObject)")
                 // seems like the UUID is useless. just use the conditionals to check here.
                 timer.invalidate()
             }
 
             if (low != nil) {
-                print("low battery it is!")
                 self.finalObject = "batteryIcon"
-                print("finalObject is \(finalObject)")
                 timer.invalidate()
             }
         }

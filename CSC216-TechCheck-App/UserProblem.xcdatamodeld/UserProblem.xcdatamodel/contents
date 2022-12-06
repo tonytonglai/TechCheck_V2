@@ -5,7 +5,4 @@
         <attribute name="problemSelection" optional="YES" attributeType="String"/>
         <attribute name="roomSelection" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="ProblemEntityList" representedClassName="ProblemEntityList" syncable="YES" codeGenerationType="class">
-        <attribute name="problems" optional="YES" attributeType="Transformable"/>
-    </entity>
 </model>

@@ -16,9 +16,6 @@ class roomSelectionViewController: UIViewController, UIPickerViewDelegate, UIPic
     
     @IBAction func scanIssueButton(_ sender: Any) {
         let finalRoom = pickedBuilding + "/" + pickedRoom
-        print("HI!\n\n")
-        print("The building selected is \(pickedBuilding) and the room number is \(pickedRoom)")
-        print("\n FINAL ROOM IS \(finalRoom)")
         let myVC = storyboard?.instantiateViewController(withIdentifier: "objectScanner") as! ObjectScannerViewController
         myVC.overallRoom = finalRoom
         navigationController?.pushViewController(myVC, animated: true)
