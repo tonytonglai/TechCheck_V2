@@ -44,14 +44,23 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="GKc-0b-Eae">
+                                <rect key="frame" x="0.0" y="170" width="414" height="466"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qLT-O9-YxE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GKc-0b-Eae" secondAttribute="trailing" id="3u7-6W-8dZ"/>
+                            <constraint firstItem="GKc-0b-Eae" firstAttribute="leading" secondItem="y3f-Yn-D1u" secondAttribute="leading" id="52F-ZH-mXt"/>
                             <constraint firstItem="LXm-Lv-yIk" firstAttribute="centerY" secondItem="y3f-Yn-D1u" secondAttribute="centerY" multiplier="1.6" id="DBY-ND-4Hk"/>
+                            <constraint firstItem="GKc-0b-Eae" firstAttribute="centerY" secondItem="y3f-Yn-D1u" secondAttribute="centerY" constant="-45" id="Mnp-MZ-Osk"/>
+                            <constraint firstItem="qLT-O9-YxE" firstAttribute="bottom" secondItem="GKc-0b-Eae" secondAttribute="bottom" constant="226" id="bXC-bB-0co"/>
                             <constraint firstItem="N73-dw-yXU" firstAttribute="centerX" secondItem="y3f-Yn-D1u" secondAttribute="centerX" id="c38-H6-4mW"/>
                             <constraint firstItem="N73-dw-yXU" firstAttribute="centerY" secondItem="y3f-Yn-D1u" secondAttribute="centerY" multiplier="0.3" constant="-5" id="vrJ-pv-JSy"/>
                             <constraint firstItem="LXm-Lv-yIk" firstAttribute="centerX" secondItem="y3f-Yn-D1u" secondAttribute="centerX" id="xp6-EI-BB6"/>
+                            <constraint firstItem="GKc-0b-Eae" firstAttribute="centerX" secondItem="y3f-Yn-D1u" secondAttribute="centerX" id="zzi-iZ-goG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="26K-uy-68r"/>
@@ -242,8 +251,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wrf-49-1if">
-                                <rect key="frame" x="0.0" y="128" width="414" height="768"/>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJs-MQ-99r">
+                                <rect key="frame" x="0.0" y="200" width="414" height="696"/>
                             </arView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAj-On-i0b" customClass="rightButton" customModule="CSC216_TechCheck_App" customModuleProvider="target">
                                 <rect key="frame" x="314.5" y="789" width="75" height="35"/>
@@ -254,10 +263,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Oi-cu-Rlv">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qah-yB-sNb">
-                                        <rect key="frame" x="10" y="174.5" width="394" height="20.5"/>
+                                        <rect key="frame" x="10" y="149.5" width="394" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -276,20 +285,20 @@
                         <viewLayoutGuide key="safeArea" id="yNU-wY-5yU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Wrf-49-1if" firstAttribute="leading" secondItem="yNU-wY-5yU" secondAttribute="leading" id="1dO-lm-iMG"/>
-                            <constraint firstAttribute="bottom" secondItem="Wrf-49-1if" secondAttribute="bottom" id="7tH-ua-4PD"/>
+                            <constraint firstItem="XJs-MQ-99r" firstAttribute="top" secondItem="7Oi-cu-Rlv" secondAttribute="bottom" id="9wr-cH-7v9"/>
                             <constraint firstItem="UAj-On-i0b" firstAttribute="centerY" secondItem="EhE-hf-dwo" secondAttribute="centerY" multiplier="1.8" id="DBA-31-q3A"/>
-                            <constraint firstItem="Wrf-49-1if" firstAttribute="top" secondItem="7Oi-cu-Rlv" secondAttribute="bottom" constant="-97" id="Lwd-ym-YAv"/>
+                            <constraint firstItem="XJs-MQ-99r" firstAttribute="leading" secondItem="yNU-wY-5yU" secondAttribute="leading" id="N06-R3-MgF"/>
                             <constraint firstItem="7Oi-cu-Rlv" firstAttribute="top" secondItem="EhE-hf-dwo" secondAttribute="top" id="P06-Ox-ABI"/>
-                            <constraint firstItem="Wrf-49-1if" firstAttribute="trailing" secondItem="yNU-wY-5yU" secondAttribute="trailing" id="P73-hd-1N4"/>
+                            <constraint firstAttribute="bottom" secondItem="XJs-MQ-99r" secondAttribute="bottom" id="QI3-cr-p0g"/>
                             <constraint firstItem="UAj-On-i0b" firstAttribute="centerX" secondItem="EhE-hf-dwo" secondAttribute="centerX" multiplier="1.7" id="YLe-9C-mWl"/>
-                            <constraint firstAttribute="bottom" secondItem="7Oi-cu-Rlv" secondAttribute="bottom" constant="671" id="nM5-0I-Q86"/>
+                            <constraint firstItem="XJs-MQ-99r" firstAttribute="trailing" secondItem="yNU-wY-5yU" secondAttribute="trailing" id="b2N-Q3-eeM"/>
+                            <constraint firstAttribute="bottom" secondItem="7Oi-cu-Rlv" secondAttribute="bottom" constant="696" id="nM5-0I-Q86"/>
                             <constraint firstItem="7Oi-cu-Rlv" firstAttribute="leading" secondItem="yNU-wY-5yU" secondAttribute="leading" id="vTr-sc-Xfd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wEn-0s-ZfB"/>
                     <connections>
-                        <outlet property="arView" destination="Wrf-49-1if" id="ppB-Cq-RF7"/>
+                        <outlet property="arView" destination="XJs-MQ-99r" id="oFF-tl-4hc"/>
                         <outlet property="instructionLabel" destination="Qah-yB-sNb" id="4Iz-Cg-4rI"/>
                         <outlet property="rightButtonUI" destination="UAj-On-i0b" id="akg-md-EVf"/>
                     </connections>
@@ -318,6 +327,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Artboard 1" width="926" height="556.33331298828125"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

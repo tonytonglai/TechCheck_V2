@@ -17,14 +17,30 @@ class ObjectScannerViewController: UIViewController {
     var overallRoom: String = ""
     var finalObject: String = ""
     
+    func removingView() {
+        self.arView?.session.pause()            // there's no session on macOS
+        self.arView?.session.delegate = nil     // there's no session on macOS
+        self.arView?.scene.anchors.removeAll()
+        self.arView?.removeFromSuperview()
+        self.arView?.window?.resignKey()
+        self.arView = nil
+    }
+    
+    
     @IBAction func onPickIssue(_ sender: Any) {
         let myVC = storyboard?.instantiateViewController(withIdentifier: "problemSelection") as! ProblemSelectionViewController
         myVC.overallRoom = self.overallRoom
         myVC.objectScanned = self.finalObject
+        self.arView.scene.anchors.removeAll()
+        removingView()
         navigationController?.pushViewController(myVC, animated: true)
     }
     
     // TODO: stretch goal, conditionally render the "pick issue" button. Only allow for it to be clickable/different oolor when an object is detected
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +55,6 @@ class ObjectScannerViewController: UIViewController {
         let Meliora = try! Meliora.loadSchoolText()
         let LowBattery = try! LowBattery.loadBatteryIcon()
         let LowBatteryDesktopScene = try! LowBatteryDesktop.loadScene()
-        
-        let session = arView.session
         
         var mel: UUID? = Meliora.anchorIdentifier
         var low = LowBattery.anchorIdentifier

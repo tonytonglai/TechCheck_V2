@@ -8,42 +8,76 @@
 import UIKit
 import RealityKit
 
-class SolutionsViewController: UIViewController, ScreenDelegate {
+class SolutionsViewController: UIViewController {
 
     var itemSelection = ""
-    var problemSelection = ""
+    var problemSelection = "Computer"
     let solutions = Solutions()
     
     // creating the relevant Scenes...
-    let laptopScene = try! Laptop.loadScene()
-    let AppleChargerScene = try! AppleCharger.loadScene()
     
     @IBOutlet weak var arView: ARView!
     @IBOutlet weak var instructionLabel: UILabel!
     
+    func loadAllScenes(currStage: Int, problemSelection:String) {
+        let laptopScene = try! Laptop.loadScene()
+        let macbookProScene = try! MacbookPro.loadScene()
+        let AppleChargerScene = try! AppleCharger.loadScene()
+        let lowBatteryDesktopScene = try! LowBatteryDesktop.loadScene()
+        
+        if (problemSelection == "Computer") {
+            if (currStage == 0) {
+                // arView.scene.anchors.append()
+                print("In currStage 0")
+                DispatchQueue.main.async {
+                    self.arView.scene.anchors.append(AppleChargerScene)
+                    self.arView.scene.anchors.append(lowBatteryDesktopScene)
+                }
+            }
+            if (currStage == 1) {
+                print("In currStage 1")
+                DispatchQueue.main.async {
+                    self.arView.scene.anchors.removeAll()
+                    self.arView.scene.anchors.append(macbookProScene)
+                }
+                
+            }
+            if (currStage == 2) {
+                // append the first anchor.
+                print("In currStage 2")
+                DispatchQueue.main.async {
+                    self.arView.scene.anchors.append(lowBatteryDesktopScene)
+                    self.arView.scene.anchors.append(AppleChargerScene)
+                }
+            }
+            if (currStage == 3) {
+                print("In currStage 3")
+                DispatchQueue.main.async {
+                    self.arView.scene.anchors.removeAll()
+                }
+            }
+        }
+    }
     private var counter = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         // actually, let me try this.
         instructionLabel.text = solutions.findSolutions(problem: problemSelection)[counter]
         rightButtonUI.setTitle(solutions.findButton(problem: problemSelection)[counter], for: .normal)
-        renderAnchor(currStage: counter, problemSelection: problemSelection)
-    }
-    		
-    func didHitNext(currStage: Int, problemSelection: String) {
-        instructionLabel.text = solutions.findSolutions(problem: problemSelection)[currStage]
-        rightButtonUI.setTitle(solutions.findButton(problem: problemSelection)[currStage], for: .normal)
+        loadAllScenes(currStage: counter, problemSelection: problemSelection)
+        
     }
     
     @IBAction func onRightButton(_ sender: Any) {
         if (counter > 2) {
-            renderAnchor(currStage: counter, problemSelection: problemSelection)
+            loadAllScenes(currStage: counter, problemSelection: problemSelection)
             rightButtonUI.setTitle("Finish", for: .normal)
             self.navigationController?.popToRootViewController(animated: true)
         } else {
             counter += 1
-            renderAnchor(currStage: counter, problemSelection: problemSelection)
+            loadAllScenes(currStage: counter, problemSelection: problemSelection)
             instructionLabel.text = solutions.findSolutions(problem: problemSelection)[counter]
             rightButtonUI.setTitle(solutions.findButton(problem: problemSelection)[counter], for: .normal)
         }
@@ -60,25 +94,40 @@ class SolutionsViewController: UIViewController, ScreenDelegate {
     // basically, I think we should let there be a variable anchor. What it will anchor to DEPENDS on what state we're in.
     // and for each state, I think it should correspond with a different textField, and different
     
-    func renderAnchor(currStage: Int, problemSelection: String) {
-        if (problemSelection == "Computer") {
-            if (currStage == 0) {
-                // arView.scene.anchors.append()
-                arView.scene.anchors.append(AppleChargerScene)
-            }
-            if (currStage == 1) {
-                arView.scene.anchors.remove(AppleChargerScene)
-                arView.scene.anchors.append(laptopScene)
-            }
-            if (currStage == 2) {
-                // append the first anchor.
-                arView.scene.anchors.append(AppleChargerScene)
-            }
-            if (currStage == 3) {
-                arView.scene.anchors.remove(laptopScene)
-                arView.scene.anchors.remove(AppleChargerScene)
-            }
-        }
+//    func renderAnchor(currStage: Int, problemSelection: String) {
+//        print("renderAnchor Called")
+//        if (problemSelection == "Computer") {
+//            if (currStage == 0) {
+//                // arView.scene.anchors.append()
+//                print("In currStage 0")
+//                DispatchQueue.main.async {
+//                    self.arView.scene.anchors.append(self.AppleChargerScene)
+//                    self.arView.scene.anchors.append(self.lowBatteryDesktopScene)
+//                }
+//            }
+//            if (currStage == 1) {
+//                print("In currStage 1")
+//                DispatchQueue.main.async {
+//                    self.arView.scene.anchors.remove(self.AppleChargerScene)
+//                    self.arView.scene.anchors.append(self.macbookProScene)
+//                }
+//
+//            }
+//            if (currStage == 2) {
+//                // append the first anchor.
+//                print("In currStage 2")
+//                DispatchQueue.main.async {
+//                    self.arView.scene.anchors.append(self.AppleChargerScene)
+//                }
+//            }
+//            if (currStage == 3) {
+//                print("In currStage 3")
+//                DispatchQueue.main.async {
+//                    self.arView.scene.anchors.remove(macbookProScene)
+//                    self.arView.scene.anchors.remove(AppleChargerScene)
+//                }
+//            }
+//        }
     }
     /*
     // MARK: - Navigation
@@ -90,4 +139,4 @@ class SolutionsViewController: UIViewController, ScreenDelegate {
     }
     */
 
-}
+

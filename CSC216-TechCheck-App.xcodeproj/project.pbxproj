@@ -18,6 +18,7 @@
 		58056BB72936AF2B007E667C /* roomSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056BB62936AF2B007E667C /* roomSelectionViewController.swift */; };
 		58056BBC29394191007E667C /* UserProblem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58056BBA29394191007E667C /* UserProblem.xcdatamodeld */; };
 		58056BBE29394208007E667C /* Selections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056BBD29394208007E667C /* Selections.swift */; };
+		581B35ED29418852008B5141 /* MacbookPro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 581B35EC29418852008B5141 /* MacbookPro.rcproject */; };
 		5822BD66293AA7DB00A449EA /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822BD65293AA7DB00A449EA /* DefaultKeys.swift */; };
 		585B277A293FC8A000651BF3 /* LowBattery.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 585B2779293FC8A000651BF3 /* LowBattery.rcproject */; };
 		585B277C293FCAAC00651BF3 /* ProblemSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B277B293FCAAC00651BF3 /* ProblemSelectionViewController.swift */; };
@@ -44,6 +45,7 @@
 		58056BB62936AF2B007E667C /* roomSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomSelectionViewController.swift; sourceTree = "<group>"; };
 		58056BBB29394191007E667C /* UserProblem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserProblem.xcdatamodel; sourceTree = "<group>"; };
 		58056BBD29394208007E667C /* Selections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selections.swift; sourceTree = "<group>"; };
+		581B35EC29418852008B5141 /* MacbookPro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = MacbookPro.rcproject; sourceTree = "<group>"; };
 		5822BD65293AA7DB00A449EA /* DefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
 		585B2779293FC8A000651BF3 /* LowBattery.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = LowBattery.rcproject; sourceTree = "<group>"; };
 		585B277B293FCAAC00651BF3 /* ProblemSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSelectionViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		58056B9E2936A83D007E667C /* CSC216-TechCheck-App */ = {
 			isa = PBXGroup;
 			children = (
+				581B35EC29418852008B5141 /* MacbookPro.rcproject */,
 				589FCBCD293C51CE00901D2D /* Meliora.rcproject */,
 				58056B9F2936A83D007E667C /* AppDelegate.swift */,
 				58056BA12936A83D007E667C /* ViewController.swift */,
@@ -203,6 +206,7 @@
 				589FCBCC293C4DA100901D2D /* CardView.swift in Sources */,
 				585B277A293FC8A000651BF3 /* LowBattery.rcproject in Sources */,
 				58056BA42936A83D007E667C /* Experience.rcproject in Sources */,
+				581B35ED29418852008B5141 /* MacbookPro.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
