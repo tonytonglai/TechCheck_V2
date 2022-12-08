@@ -82,7 +82,10 @@ class ProblemSelectionViewController: UIViewController, UIPickerViewDelegate, UI
         }
         
         // OH THIS IS SO SEXY!!! OH I LOVE THIS LITTLE FUNCTION!!! BE CAREFUL WITH THIS THOUGH!!!
-        self.navigationController?.popToRootViewController(animated: true)
+        let myVC = storyboard?.instantiateViewController(withIdentifier: "solutionsVC") as! SolutionsViewController
+        myVC.itemSelection = self.objectScanned
+        myVC.problemSelection = self.pickedProblem
+        navigationController?.pushViewController(myVC, animated: true)
         
     }
     /*

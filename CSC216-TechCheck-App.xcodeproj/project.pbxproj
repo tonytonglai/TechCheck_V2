@@ -21,6 +21,11 @@
 		5822BD66293AA7DB00A449EA /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822BD65293AA7DB00A449EA /* DefaultKeys.swift */; };
 		585B277A293FC8A000651BF3 /* LowBattery.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 585B2779293FC8A000651BF3 /* LowBattery.rcproject */; };
 		585B277C293FCAAC00651BF3 /* ProblemSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B277B293FCAAC00651BF3 /* ProblemSelectionViewController.swift */; };
+		585B277E2941550400651BF3 /* SolutionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B277D2941550400651BF3 /* SolutionsViewController.swift */; };
+		585B27802941659C00651BF3 /* rightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B277F2941659C00651BF3 /* rightButton.swift */; };
+		585B27842941795800651BF3 /* Laptop.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 585B27832941795800651BF3 /* Laptop.rcproject */; };
+		585B278629417D5100651BF3 /* LowBatteryDesktop.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 585B278529417D5100651BF3 /* LowBatteryDesktop.rcproject */; };
+		585B2788294183A800651BF3 /* AppleCharger.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 585B2787294183A800651BF3 /* AppleCharger.rcproject */; };
 		589FCBCA293C0CF100901D2D /* ObjectScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FCBC9293C0CF100901D2D /* ObjectScannerViewController.swift */; };
 		589FCBCC293C4DA100901D2D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FCBCB293C4DA100901D2D /* CardView.swift */; };
 		589FCBCE293C51CE00901D2D /* Meliora.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 589FCBCD293C51CE00901D2D /* Meliora.rcproject */; };
@@ -42,6 +47,11 @@
 		5822BD65293AA7DB00A449EA /* DefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
 		585B2779293FC8A000651BF3 /* LowBattery.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = LowBattery.rcproject; sourceTree = "<group>"; };
 		585B277B293FCAAC00651BF3 /* ProblemSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSelectionViewController.swift; sourceTree = "<group>"; };
+		585B277D2941550400651BF3 /* SolutionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionsViewController.swift; sourceTree = "<group>"; };
+		585B277F2941659C00651BF3 /* rightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rightButton.swift; sourceTree = "<group>"; };
+		585B27832941795800651BF3 /* Laptop.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Laptop.rcproject; sourceTree = "<group>"; };
+		585B278529417D5100651BF3 /* LowBatteryDesktop.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = LowBatteryDesktop.rcproject; sourceTree = "<group>"; };
+		585B2787294183A800651BF3 /* AppleCharger.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = AppleCharger.rcproject; sourceTree = "<group>"; };
 		589FCBC9293C0CF100901D2D /* ObjectScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScannerViewController.swift; sourceTree = "<group>"; };
 		589FCBCB293C4DA100901D2D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		589FCBCD293C51CE00901D2D /* Meliora.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Meliora.rcproject; sourceTree = "<group>"; };
@@ -94,6 +104,11 @@
 				589FCBCB293C4DA100901D2D /* CardView.swift */,
 				585B2779293FC8A000651BF3 /* LowBattery.rcproject */,
 				585B277B293FCAAC00651BF3 /* ProblemSelectionViewController.swift */,
+				585B277D2941550400651BF3 /* SolutionsViewController.swift */,
+				585B277F2941659C00651BF3 /* rightButton.swift */,
+				585B27832941795800651BF3 /* Laptop.rcproject */,
+				585B278529417D5100651BF3 /* LowBatteryDesktop.rcproject */,
+				585B2787294183A800651BF3 /* AppleCharger.rcproject */,
 			);
 			path = "CSC216-TechCheck-App";
 			sourceTree = "<group>";
@@ -170,14 +185,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				589FCBCE293C51CE00901D2D /* Meliora.rcproject in Sources */,
+				585B277E2941550400651BF3 /* SolutionsViewController.swift in Sources */,
 				58056BA22936A83D007E667C /* ViewController.swift in Sources */,
 				58056BB52936ADA4007E667C /* startViewController.swift in Sources */,
 				58056BB72936AF2B007E667C /* roomSelectionViewController.swift in Sources */,
 				58056BA02936A83D007E667C /* AppDelegate.swift in Sources */,
+				585B27802941659C00651BF3 /* rightButton.swift in Sources */,
+				585B27842941795800651BF3 /* Laptop.rcproject in Sources */,
 				585B277C293FCAAC00651BF3 /* ProblemSelectionViewController.swift in Sources */,
 				58056BBE29394208007E667C /* Selections.swift in Sources */,
+				585B2788294183A800651BF3 /* AppleCharger.rcproject in Sources */,
 				5822BD66293AA7DB00A449EA /* DefaultKeys.swift in Sources */,
 				589FCBCA293C0CF100901D2D /* ObjectScannerViewController.swift in Sources */,
+				585B278629417D5100651BF3 /* LowBatteryDesktop.rcproject in Sources */,
 				58056BB32936A99A007E667C /* arViewScanner.swift in Sources */,
 				58056BBC29394191007E667C /* UserProblem.xcdatamodeld in Sources */,
 				589FCBCC293C4DA100901D2D /* CardView.swift in Sources */,

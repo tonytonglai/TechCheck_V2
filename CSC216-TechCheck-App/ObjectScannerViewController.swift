@@ -38,19 +38,23 @@ class ObjectScannerViewController: UIViewController {
         
         let Meliora = try! Meliora.loadSchoolText()
         let LowBattery = try! LowBattery.loadBatteryIcon()
+        let LowBatteryDesktopScene = try! LowBatteryDesktop.loadScene()
         
         let session = arView.session
         
         var mel: UUID? = Meliora.anchorIdentifier
         var low = LowBattery.anchorIdentifier
+        var lowdesk = LowBatteryDesktopScene.anchorIdentifier
         
         arView.scene.anchors.append(Meliora)
+        arView.scene.anchors.append(LowBatteryDesktopScene)
         
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [self] timer in
             print("Timer fired!")
 
             mel = Meliora.anchorIdentifier
             low = LowBattery.anchorIdentifier
+            lowdesk = LowBatteryDesktopScene.anchorIdentifier
             
             if (mel != nil) {
                 self.finalObject = "schoolLogo"
@@ -62,6 +66,12 @@ class ObjectScannerViewController: UIViewController {
                 self.finalObject = "batteryIcon"
                 timer.invalidate()
             }
+            
+            if (lowdesk != nil) {
+                self.finalObject = "batteryIcon"
+                timer.invalidate()
+            }
+            
         }
         // Do any additional setup after loading the view.
     }
