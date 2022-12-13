@@ -1,0 +1,248 @@
+{
+  "__content" : [
+    {
+      "scenes" : [
+        {
+          "__content" : [
+            {
+              "arAnchorSpecification" : {
+                "name" : "image",
+                "physicalWidth" : 0.33513888716697693,
+                "url" : "image:08554af0e234a1031297ca2156c7725d\/uofrlogo.png"
+              },
+              "behaviors" : [
+
+              ],
+              "gravity" : [
+                0,
+                -9.8000001907348633,
+                0
+              ],
+              "identifier" : "4809FE2B-E2F0-445A-8C9D-67ED6504E8C7",
+              "material" : "concrete",
+              "overrides" : {
+                "children" : {
+                  "3ABB3479-A696-4629-BF80-87EE8E735F79" : null,
+                  "D076C615-F488-4491-8200-C151976FAB6E" : null,
+                  "D911C9BD-19DA-4B45-9E89-E0D6774E1D04" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "boundHeight",
+                          {
+                            "typeName" : "Double",
+                            "value" : 1.5
+                          }
+                        ],
+                        [
+                          "boundWidth",
+                          {
+                            "typeName" : "Double",
+                            "value" : 6
+                          }
+                        ],
+                        [
+                          "depth",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.22
+                          }
+                        ],
+                        [
+                          "font",
+                          {
+                            "typeName" : "String",
+                            "value" : "Helvetica"
+                          }
+                        ],
+                        [
+                          "hasBackground",
+                          {
+                            "typeName" : "Bool",
+                            "value" : false
+                          }
+                        ],
+                        [
+                          "height",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.10000000000000001
+                          }
+                        ],
+                        [
+                          "horizontalAlignment",
+                          {
+                            "typeName" : "String",
+                            "value" : "center"
+                          }
+                        ],
+                        [
+                          "material",
+                          {
+                            "typeName" : "String",
+                            "value" : "standard"
+                          }
+                        ],
+                        [
+                          "materialColor",
+                          {
+                            "typeName" : "double4",
+                            "value" : [
+                              1,
+                              1,
+                              1,
+                              1
+                            ]
+                          }
+                        ],
+                        [
+                          "oneLine",
+                          {
+                            "typeName" : "Bool",
+                            "value" : false
+                          }
+                        ],
+                        [
+                          "precision",
+                          {
+                            "typeName" : "String",
+                            "value" : "normal"
+                          }
+                        ],
+                        [
+                          "text",
+                          {
+                            "typeName" : "String",
+                            "value" : "This is my school!"
+                          }
+                        ],
+                        [
+                          "verticalAlignment",
+                          {
+                            "typeName" : "String",
+                            "value" : "bottom"
+                          }
+                        ],
+                        [
+                          "verticalPosition",
+                          {
+                            "typeName" : "String",
+                            "value" : "middle"
+                          }
+                        ],
+                        [
+                          "wordWrap",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ]
+                      ],
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.CoreAssetFactories.Text",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "F38F9B66-237F-404A-9E12-F7D91F1CFDFC"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.99999988079071045,
+                        2.8199394819239387e-07,
+                        5.9604083446629375e-08,
+                        0,
+                        5.9602093926969246e-08,
+                        6.4372839005955029e-06,
+                        -0.99999725818634033,
+                        0,
+                        -2.8199352186675242e-07,
+                        0.99999707937240601,
+                        6.4372829911008012e-06,
+                        0,
+                        -0.017906084656715393,
+                        0.0024207085371017456,
+                        -0.26033890247344971,
+                        1
+                      ]
+                    }
+                  },
+                  "D8487698-86A9-4AC5-9A6A-1CDCEBC431F5" : null,
+                  "Shape" : null
+                },
+                "factory" : null,
+                "runtimeAttributes" : [
+                  [
+                    "isAccessibilityEnabled",
+                    {
+                      "typeName" : "Bool",
+                      "value" : false
+                    }
+                  ]
+                ]
+              },
+              "physicsMode" : "grid",
+              "title" : "schoolText",
+              "viewTransform" : {
+                "cameraTransform" : [
+                  0.99764668941497803,
+                  1.4901161193847656e-08,
+                  -0.06856381893157959,
+                  0,
+                  -0.068521954119205475,
+                  0.034899622201919556,
+                  -0.99703896045684814,
+                  0,
+                  0.0023927991278469563,
+                  0.99939078092575073,
+                  0.03481745719909668,
+                  0,
+                  -0.0026358303148299456,
+                  0.99337935447692871,
+                  -0.042788751423358917,
+                  1
+                ],
+                "sceneTransform" : [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "__version" : 5
+        }
+      ],
+      "tags" : {
+        "__content" : [
+          {
+            "tagsStore" : {
+
+            }
+          }
+        ],
+        "__version" : 1
+      }
+    }
+  ],
+  "__version" : 1
+}

@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58056BA02936A83D007E667C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056B9F2936A83D007E667C /* AppDelegate.swift */; };
+		58056BA22936A83D007E667C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056BA12936A83D007E667C /* ViewController.swift */; };
+		58056BA42936A83D007E667C /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 58056BA32936A83D007E667C /* Experience.rcproject */; };
+		58056BA72936A83D007E667C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58056BA52936A83D007E667C /* Main.storyboard */; };
+		58056BA92936A83F007E667C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58056BA82936A83F007E667C /* Assets.xcassets */; };
+		58056BAC2936A83F007E667C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58056BAA2936A83F007E667C /* LaunchScreen.storyboard */; };
+		58056BB32936A99A007E667C /* arViewScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056BB22936A99A007E667C /* arViewScanner.swift */; };
+		58056BB52936ADA4007E667C /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056BB42936ADA4007E667C /* startViewController.swift */; };
+		58056BB72936AF2B007E667C /* roomSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056BB62936AF2B007E667C /* roomSelectionViewController.swift */; };
+		58056BBC29394191007E667C /* UserProblem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58056BBA29394191007E667C /* UserProblem.xcdatamodeld */; };
+		58056BBE29394208007E667C /* Selections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58056BBD29394208007E667C /* Selections.swift */; };
+		581B35ED29418852008B5141 /* MacbookPro.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 581B35EC29418852008B5141 /* MacbookPro.rcproject */; };
+		5822BD66293AA7DB00A449EA /* DefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5822BD65293AA7DB00A449EA /* DefaultKeys.swift */; };
+		585B277A293FC8A000651BF3 /* LowBattery.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 585B2779293FC8A000651BF3 /* LowBattery.rcproject */; };
+		585B277C293FCAAC00651BF3 /* ProblemSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B277B293FCAAC00651BF3 /* ProblemSelectionViewController.swift */; };
+		585B277E2941550400651BF3 /* SolutionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B277D2941550400651BF3 /* SolutionsViewController.swift */; };
+		585B27802941659C00651BF3 /* rightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585B277F2941659C00651BF3 /* rightButton.swift */; };
+		585B27842941795800651BF3 /* Laptop.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 585B27832941795800651BF3 /* Laptop.rcproject */; };
+		585B278629417D5100651BF3 /* LowBatteryDesktop.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 585B278529417D5100651BF3 /* LowBatteryDesktop.rcproject */; };
+		585B2788294183A800651BF3 /* AppleCharger.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 585B2787294183A800651BF3 /* AppleCharger.rcproject */; };
+		589FCBCA293C0CF100901D2D /* ObjectScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FCBC9293C0CF100901D2D /* ObjectScannerViewController.swift */; };
+		589FCBCC293C4DA100901D2D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FCBCB293C4DA100901D2D /* CardView.swift */; };
+		589FCBCE293C51CE00901D2D /* Meliora.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 589FCBCD293C51CE00901D2D /* Meliora.rcproject */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58056B9C2936A83D007E667C /* CSC216-TechCheck-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSC216-TechCheck-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58056B9F2936A83D007E667C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58056BA12936A83D007E667C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58056BA32936A83D007E667C /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		58056BA62936A83D007E667C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58056BA82936A83F007E667C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58056BAB2936A83F007E667C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58056BB22936A99A007E667C /* arViewScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arViewScanner.swift; sourceTree = "<group>"; };
+		58056BB42936ADA4007E667C /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
+		58056BB62936AF2B007E667C /* roomSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomSelectionViewController.swift; sourceTree = "<group>"; };
+		58056BBB29394191007E667C /* UserProblem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserProblem.xcdatamodel; sourceTree = "<group>"; };
+		58056BBD29394208007E667C /* Selections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selections.swift; sourceTree = "<group>"; };
+		581B35EC29418852008B5141 /* MacbookPro.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = MacbookPro.rcproject; sourceTree = "<group>"; };
+		5822BD65293AA7DB00A449EA /* DefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKeys.swift; sourceTree = "<group>"; };
+		585B2779293FC8A000651BF3 /* LowBattery.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = LowBattery.rcproject; sourceTree = "<group>"; };
+		585B277B293FCAAC00651BF3 /* ProblemSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSelectionViewController.swift; sourceTree = "<group>"; };
+		585B277D2941550400651BF3 /* SolutionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionsViewController.swift; sourceTree = "<group>"; };
+		585B277F2941659C00651BF3 /* rightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rightButton.swift; sourceTree = "<group>"; };
+		585B27832941795800651BF3 /* Laptop.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Laptop.rcproject; sourceTree = "<group>"; };
+		585B278529417D5100651BF3 /* LowBatteryDesktop.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = LowBatteryDesktop.rcproject; sourceTree = "<group>"; };
+		585B2787294183A800651BF3 /* AppleCharger.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = AppleCharger.rcproject; sourceTree = "<group>"; };
+		589FCBC9293C0CF100901D2D /* ObjectScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScannerViewController.swift; sourceTree = "<group>"; };
+		589FCBCB293C4DA100901D2D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		589FCBCD293C51CE00901D2D /* Meliora.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Meliora.rcproject; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58056B992936A83D007E667C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58056B932936A83D007E667C = {
+			isa = PBXGroup;
+			children = (
+				58056B9E2936A83D007E667C /* CSC216-TechCheck-App */,
+				58056B9D2936A83D007E667C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58056B9D2936A83D007E667C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58056B9C2936A83D007E667C /* CSC216-TechCheck-App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58056B9E2936A83D007E667C /* CSC216-TechCheck-App */ = {
+			isa = PBXGroup;
+			children = (
+				581B35EC29418852008B5141 /* MacbookPro.rcproject */,
+				589FCBCD293C51CE00901D2D /* Meliora.rcproject */,
+				58056B9F2936A83D007E667C /* AppDelegate.swift */,
+				58056BA12936A83D007E667C /* ViewController.swift */,
+				58056BA32936A83D007E667C /* Experience.rcproject */,
+				58056BA52936A83D007E667C /* Main.storyboard */,
+				58056BB62936AF2B007E667C /* roomSelectionViewController.swift */,
+				58056BB22936A99A007E667C /* arViewScanner.swift */,
+				58056BA82936A83F007E667C /* Assets.xcassets */,
+				58056BAA2936A83F007E667C /* LaunchScreen.storyboard */,
+				58056BB42936ADA4007E667C /* startViewController.swift */,
+				58056BBA29394191007E667C /* UserProblem.xcdatamodeld */,
+				5822BD65293AA7DB00A449EA /* DefaultKeys.swift */,
+				58056BBD29394208007E667C /* Selections.swift */,
+				589FCBC9293C0CF100901D2D /* ObjectScannerViewController.swift */,
+				589FCBCB293C4DA100901D2D /* CardView.swift */,
+				585B2779293FC8A000651BF3 /* LowBattery.rcproject */,
+				585B277B293FCAAC00651BF3 /* ProblemSelectionViewController.swift */,
+				585B277D2941550400651BF3 /* SolutionsViewController.swift */,
+				585B277F2941659C00651BF3 /* rightButton.swift */,
+				585B27832941795800651BF3 /* Laptop.rcproject */,
+				585B278529417D5100651BF3 /* LowBatteryDesktop.rcproject */,
+				585B2787294183A800651BF3 /* AppleCharger.rcproject */,
+			);
+			path = "CSC216-TechCheck-App";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58056B9B2936A83D007E667C /* CSC216-TechCheck-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58056BAF2936A83F007E667C /* Build configuration list for PBXNativeTarget "CSC216-TechCheck-App" */;
+			buildPhases = (
+				58056B982936A83D007E667C /* Sources */,
+				58056B992936A83D007E667C /* Frameworks */,
+				58056B9A2936A83D007E667C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CSC216-TechCheck-App";
+			productName = "CSC216-TechCheck-App";
+			productReference = 58056B9C2936A83D007E667C /* CSC216-TechCheck-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58056B942936A83D007E667C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					58056B9B2936A83D007E667C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 58056B972936A83D007E667C /* Build configuration list for PBXProject "CSC216-TechCheck-App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58056B932936A83D007E667C;
+			productRefGroup = 58056B9D2936A83D007E667C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58056B9B2936A83D007E667C /* CSC216-TechCheck-App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58056B9A2936A83D007E667C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58056BAC2936A83F007E667C /* LaunchScreen.storyboard in Resources */,
+				58056BA92936A83F007E667C /* Assets.xcassets in Resources */,
+				58056BA72936A83D007E667C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58056B982936A83D007E667C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589FCBCE293C51CE00901D2D /* Meliora.rcproject in Sources */,
+				585B277E2941550400651BF3 /* SolutionsViewController.swift in Sources */,
+				58056BA22936A83D007E667C /* ViewController.swift in Sources */,
+				58056BB52936ADA4007E667C /* startViewController.swift in Sources */,
+				58056BB72936AF2B007E667C /* roomSelectionViewController.swift in Sources */,
+				58056BA02936A83D007E667C /* AppDelegate.swift in Sources */,
+				585B27802941659C00651BF3 /* rightButton.swift in Sources */,
+				585B27842941795800651BF3 /* Laptop.rcproject in Sources */,
+				585B277C293FCAAC00651BF3 /* ProblemSelectionViewController.swift in Sources */,
+				58056BBE29394208007E667C /* Selections.swift in Sources */,
+				585B2788294183A800651BF3 /* AppleCharger.rcproject in Sources */,
+				5822BD66293AA7DB00A449EA /* DefaultKeys.swift in Sources */,
+				589FCBCA293C0CF100901D2D /* ObjectScannerViewController.swift in Sources */,
+				585B278629417D5100651BF3 /* LowBatteryDesktop.rcproject in Sources */,
+				58056BB32936A99A007E667C /* arViewScanner.swift in Sources */,
+				58056BBC29394191007E667C /* UserProblem.xcdatamodeld in Sources */,
+				589FCBCC293C4DA100901D2D /* CardView.swift in Sources */,
+				585B277A293FC8A000651BF3 /* LowBattery.rcproject in Sources */,
+				58056BA42936A83D007E667C /* Experience.rcproject in Sources */,
+				581B35ED29418852008B5141 /* MacbookPro.rcproject in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58056BA52936A83D007E667C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58056BA62936A83D007E667C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58056BAA2936A83F007E667C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58056BAB2936A83F007E667C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58056BAD2936A83F007E667C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58056BAE2936A83F007E667C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58056BB02936A83F007E667C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 824ZB3LC85;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CSC216-TechCheck-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58056BB12936A83F007E667C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 824ZB3LC85;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "CSC216-TechCheck-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58056B972936A83D007E667C /* Build configuration list for PBXProject "CSC216-TechCheck-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58056BAD2936A83F007E667C /* Debug */,
+				58056BAE2936A83F007E667C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58056BAF2936A83F007E667C /* Build configuration list for PBXNativeTarget "CSC216-TechCheck-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58056BB02936A83F007E667C /* Debug */,
+				58056BB12936A83F007E667C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		58056BBA29394191007E667C /* UserProblem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				58056BBB29394191007E667C /* UserProblem.xcdatamodel */,
+			);
+			currentVersion = 58056BBB29394191007E667C /* UserProblem.xcdatamodel */;
+			path = UserProblem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 58056B942936A83D007E667C /* Project object */;
+}

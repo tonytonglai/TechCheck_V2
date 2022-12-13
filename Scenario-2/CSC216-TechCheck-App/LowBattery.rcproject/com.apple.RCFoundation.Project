@@ -1,0 +1,98 @@
+{
+  "__content" : [
+    {
+      "scenes" : [
+        {
+          "__content" : [
+            {
+              "arAnchorSpecification" : {
+                "name" : "image",
+                "physicalWidth" : 0.23142221570014954,
+                "url" : "image:6a8abc3793c25117a72c4cb8f932e33f\/lowBattery.jpeg"
+              },
+              "behaviors" : [
+
+              ],
+              "gravity" : [
+                0,
+                -9.8000001907348633,
+                0
+              ],
+              "identifier" : "B70A32A8-9A01-4F55-923D-8C43F2F25D4D",
+              "material" : "concrete",
+              "overrides" : {
+                "children" : {
+                  "492FA310-A48F-4C28-97B4-F0B582DE1220" : null,
+                  "BCEC50CD-EB18-4EFD-857A-51E99C41B8CB" : null,
+                  "Shape" : null
+                },
+                "factory" : null,
+                "runtimeAttributes" : [
+                  [
+                    "isAccessibilityEnabled",
+                    {
+                      "typeName" : "Bool",
+                      "value" : false
+                    }
+                  ]
+                ]
+              },
+              "physicsMode" : "grid",
+              "title" : "batteryIcon",
+              "viewTransform" : {
+                "cameraTransform" : [
+                  0.99339085817337036,
+                  1.7199456081584685e-08,
+                  0.11478074640035629,
+                  0,
+                  0.098228834569454193,
+                  0.51731610298156738,
+                  -0.85013836622238159,
+                  0,
+                  -0.059377986937761307,
+                  0.85579437017440796,
+                  0.51389706134796143,
+                  0,
+                  -0.038500066846609116,
+                  0.67141318321228027,
+                  0.3352082371711731,
+                  1
+                ],
+                "sceneTransform" : [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "__version" : 5
+        }
+      ],
+      "tags" : {
+        "__content" : [
+          {
+            "tagsStore" : {
+
+            }
+          }
+        ],
+        "__version" : 1
+      }
+    }
+  ],
+  "__version" : 1
+}
