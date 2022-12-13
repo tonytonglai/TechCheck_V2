@@ -1,5 +1,5 @@
 # TechCheck_V2
-### HELLO ###
+### Jules, Tony, LeeAnn, Giles, Henry ###
 THIS IS THE CSC 216 CODE PROJECT. :)
 
-LITERALLY SO DIFFICULT
+All final code is in Final.zip
